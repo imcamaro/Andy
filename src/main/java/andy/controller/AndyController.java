@@ -9,6 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.io.IOException;
+import java.io.OutputStream;
+
 @Controller
 @Slf4j
 public class AndyController {
@@ -26,8 +29,14 @@ public class AndyController {
     }
 
     @GetMapping("/pdfbox")
-    public ResponseEntity<String> generatePdfBox(HttpServletResponse response){
+    public ResponseEntity<String> generatePdfBox(HttpServletResponse response) throws IOException {
         log.info("####### Access into pdfbox API #######");
+        response.setHeader("Content-Disposition", "attachment;FileName=PDFBox.pdf");
+        byte[] pdf = pdfBoxService.createPDF();
+        OutputStream out = response.getOutputStream();
+        out.write(pdf);
+        out.close();
+
         return ResponseEntity.ok("PDFBox download success!");
     }
 
