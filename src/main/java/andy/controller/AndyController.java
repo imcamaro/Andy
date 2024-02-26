@@ -29,15 +29,13 @@ public class AndyController {
     }
 
     @GetMapping("/pdfbox")
-    public ResponseEntity<String> generatePdfBox(HttpServletResponse response) throws IOException {
+    public void generatePdfBox(HttpServletResponse response) throws IOException {
         log.info("####### Access into pdfbox API #######");
         response.setHeader("Content-Disposition", "attachment;FileName=PDFBox.pdf");
         byte[] pdf = pdfBoxService.createPDF();
         OutputStream out = response.getOutputStream();
         out.write(pdf);
         out.close();
-
-        return ResponseEntity.ok("PDFBox download success!");
     }
 
     @GetMapping("/itext")
