@@ -12,9 +12,9 @@ public class AndyApplication {
         SpringApplication.run(AndyApplication.class, args);
 
         log.info("###############################");
-        log.info("#                             #");
-        log.info("#   Andy Start Successfully   #");
-        log.info("#                             #");
+        log.info("##                           ##");
+        log.info("##  Andy Start Successfully  ##");
+        log.info("##                           ##");
         log.info("###############################");
 
     }
