@@ -1,4 +1,4 @@
-package andy.service;
+package com.andy.service;
 
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package andy.domain;
+package com.andy.domain;
 
 import lombok.Data;
 
