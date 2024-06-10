@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b6c4ee4a-403f-4d4c-886b-b693bbb98499" name="更改" comment="sync the code with master">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/andy/AndyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/andy/AndyApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +46,20 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/imcamaro/Andy.git&quot;,
-    &quot;accountId&quot;: &quot;2f951371-c4ed-4d16-a879-d7ff3dced43e&quot;
+    &quot;accountId&quot;: &quot;56b3e13d-1743-49e8-b233-d92071f90a4b&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="C:\apache-maven-3.9.7" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="C:\apache-maven-3.9.7\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -68,31 +76,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.Andy [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Andy [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Andy [dependency:tree].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ysc19/Desktop/IdeaProjects/Andy&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.34367815&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
-    &quot;应用程序.AndyApplication.executor&quot;: &quot;Run&quot;,
-    &quot;应用程序.com.andy.AndyApplication.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.Andy [clean,install].executor": "Run",
+    "Maven.Andy [clean].executor": "Run",
+    "Maven.Andy [compile].executor": "Run",
+    "Maven.Andy [dependency:tree].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ysc19/Desktop/IdeaProjects/Andy",
+    "project.structure.last.edited": "全局库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.34367815",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "应用程序.AndyApplication.executor": "Run",
+    "应用程序.com.andy.AndyApplication.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
-      <command value="mvn dependency:tree" />
       <command value="mvn clean install" />
+      <command value="mvn compile" />
+      <command value="mvn dependency:tree" />
     </option>
   </component>
   <component name="RunManager">
@@ -111,7 +121,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.AndyApplication" />
         <item itemvalue="应用程序.AndyApplication" />
       </list>
     </recent_temporary>
