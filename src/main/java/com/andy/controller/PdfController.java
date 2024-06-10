@@ -37,6 +37,7 @@ public class PdfController {
         OutputStream out = response.getOutputStream();
         out.write(pdf);
         out.close();
+        log.info("####### Complete pdfbox API #######");
     }
 
     @GetMapping("/itext")
@@ -49,6 +50,7 @@ public class PdfController {
         OutputStream out = response.getOutputStream();
         out.write(pdf);
         out.close();
+        log.info("####### Complete iText API #######");
     }
 
 }
